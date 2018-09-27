@@ -12,15 +12,32 @@ int main()
   do
   {
     cout<<"\n==GROCERY LIST MANAGER==";
-    cout<<"\nEnter your choice: ";  
-
+    cout<<"\nEnter your choice: ";
     cout<<"\n (A)dd an item";
     cout<<"\n (Q)uit";
     cout<<"\nYour choice (A/Q): ";
     cin>>input;
-  }
 
-  while(!(input == 'Q' || input == 'q'));
+    if(input == 'a' || input == 'A')
+    {
+            cout<<"What is your item?"<<endl;
+            cin>>list[numItems+1];
+
+            if(numItems == 5)
+            {
+                    cout<<"You'll need a bigger list!"<<endl;
+            }
+            else if(numItems == 4)
+            {
+                    numItems = 4;
+            }
+            else
+            {
+                    numItems++;
+            }
+    }
+  }
+  while(!(input == 'q' || input == 'Q'));
 
   return 0;
 }
