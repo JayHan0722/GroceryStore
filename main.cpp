@@ -20,10 +20,10 @@ int main()
 
     if(input == 'a' || input == 'A')
     {
-            if(numItems < 5)
+            if(numItems < 5 )
             {
                     cout<<"What is the item?"<<endl;
-                    cin>>list[numItems+1];
+                    cin>>list[numItems];
                     numItems++;
             }
             else
