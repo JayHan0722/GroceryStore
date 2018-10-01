@@ -21,6 +21,7 @@ int main()
     if(input == 'a' || input == 'A')
     {
             cout<<"What is the item?"<<endl;
+
             if(numItems < 5)
             {
                     cin>>list[numItems];
@@ -28,7 +29,6 @@ int main()
             }
             else
             {
-                    cin>>list[numItems-1];
                     cout<<"You'll need a bigger list!"<<endl;
             }
     }
