@@ -6,6 +6,7 @@ using namespace std;
 int main()
 {
   string list[5]; //array of 5 strings
+  string item;
   int numItems = 0;
   char input;
 
@@ -21,10 +22,11 @@ int main()
     if(input == 'a' || input == 'A')
     {
             cout<<"What is the item?"<<endl;
+            cin>>item;
 
             if(numItems < 5)
             {
-                    cin>>list[numItems];
+                    list[numItems] = item;
                     numItems++;
             }
             else
