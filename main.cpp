@@ -37,6 +37,7 @@ int main()
 
   for(int i = 0; i < 5; i++)
   {
+          cout<<"==ITEMS TO BUY=="<<endl;
           cout<<i+1<<" "<<list[i]<<endl;
   }
 
