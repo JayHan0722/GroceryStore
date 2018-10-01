@@ -35,5 +35,11 @@ int main()
   }
   while(!(input == 'q' || input == 'Q'));
 
+  for(int i = 0; i < 5; i++)
+  {
+          cout<<i+1<<" "<<list[i]<<endl;
+  }
+
+
   return 0;
 }
