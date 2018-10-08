@@ -36,9 +36,10 @@ int main()
 
   if(numItems != 0)
   {
+          cout<<"==ITEMS TO BUY=="<<endl;
+
           for(int index = 0; index < numItems; index++)
           {
-                  cout<<"==ITEMS TO BUY=="<<endl;
                   cout<<index+1<<" "<<list[index]<<endl;
           }
   }
