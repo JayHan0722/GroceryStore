@@ -32,13 +32,15 @@ int main()
             cout<<"No items to buy!"<<endl;
     }
   }
-  while(!(input == 'q' || input == 'Q') || numItems == 0);
+  while(!(input == 'q' || input == 'Q'));
 
-  cout<<"==ITEMS TO BUY=="<<endl;
-
-  for(int index = 0; index < numItems; index++)
+  if(numItems != 0)
   {
-          cout<<index+1<<" "<<list[index]<<endl;
+          for(int index = 0; index < numItems; index++)
+          {
+                  cout<<"==ITEMS TO BUY=="<<endl;
+                  cout<<index+1<<" "<<list[index]<<endl;
+          }
   }
 
 
