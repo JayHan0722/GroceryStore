@@ -38,7 +38,7 @@ int main()
     }
     else if((input == 'd' || input == 'D') && numItems !=0)
     {
-            cout<<item<<" was deleted from the list.\n";
+            cout<<list[numItems-1]<<" was deleted from the list.\n";
             list.pop_back();
             numItems --;
     }
